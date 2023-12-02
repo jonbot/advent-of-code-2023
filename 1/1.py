@@ -18,8 +18,8 @@ txt = getText()
 
 total = 0
 for line in txt:
-    total += int(getDigit(line))
-    total += int(getDigit(line[::-1]))
+    combinedNumber = getDigit(line) + getDigit(line[::-1])
+    total += int(combinedNumber)
 
 print(total)
 
